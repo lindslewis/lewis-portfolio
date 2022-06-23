@@ -7,24 +7,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/style.css" />
+    <title>Lindsay Lewis Portfolio</title>
 
     <!--may or  may not make a reset css-->
 </head>
 
 <body>
 
-    <!--here is the header, lets make it fixed so it scrolls with the user-->
+    <!--here is the header, fixed so that it scrolls with the user-->
     <header>
 
         <h1>Lewis Portfolio</h1>
 
         <nav>
 
-            <!--need to link the nav sections to their related parts of the page-->
+        
             <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
+                <!-- having my header fixed makes it so that when it jumps to the about me section, it's covered by the header -->
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -33,24 +35,48 @@
     <section class="hero"></section>
 
     <!--this is the about me section-->
-    <main></main>
+    <main>
+        <h1 id="about">About Me</h1>
+        <article id="text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quasi, iste possimus culpa temporibus dolores facere officiis veniam maiores tempora minima eum assumenda laboriosam rem alias architecto, magnam blanditiis qui.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quia, ut, molestiae itaque aliquid vel sint accusantium fugiat natus quis cum assumenda rerum pariatur quaerat nam sit. Consequatur, facilis labore?</p>
+        </article>
 
     <!--article will contain 5 boxes (their tag is aside) that showcase my work, with the top one taking 2x the width as the other 4, which stack-->
-    <article>
+
+        <h1 id="work">Work</h1>
 
         <!--this first one is the largest and will need an ID-->
-        <aside></aside>
+        <article id="bigbox">
+
+            <a href="https://lindslewis.github.io/accessibility-refactor/" target="_blank">
+
+                <img alt="An image of Mt. Rainier in the background, with a path and rolling green hills in the foreground." src="assets/images/mt-rainier-edit.jpg" width="756px" height="428.63px"/>
+            </a>
+        </article>
 
         <!--these four will use the same class-->
-        <aside></aside>
-        <aside></aside>
-        <aside></aside>
-        <aside></aside>
+        <article class="examples"></article>
+        <article class="examples"></article>
+        <article class="examples"></article>
+        <article class="examples"></article>
 
-    </article>
+    </main>
 
-    <!--footer will be the contact me section (which needs a h2,3,etc. tag) and then links to various methods of contact, i.e. phone number, email, github, instagram, spotify-->
-    <footer></footer>
+    <!--!!!!lets not have this be a footer.!!!!! footer will be the contact me section (which needs a h2,3,etc. tag) and then links to various methods of contact, i.e. phone number, email, github, instagram, spotify-->
+        <h1 id="contact">Contact Me</h1>
+        <article>
+
+        <nav>
+            <ul>
+                <li><a href="#">E-Mail</a></li>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Spotify</a></li>
+            </ul>
+        </nav>
+        
+        </article>
+    </main>
 
 
 
