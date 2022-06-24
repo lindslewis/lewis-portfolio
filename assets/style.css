@@ -18,11 +18,11 @@ body {
     background-color: var(--background);
 }
 
-/*header section below, so the banner at the top with name of page and nav bar*/
+/*header section below, so the banner at the top with name of page and nav bar, used a comment over the position tag as I would like to add that later, but for now will keep it without.*/
 
 header {
     display: flex;
-    position: fixed;
+    /* position: fixed; */
     align-items: center;
     padding: 2em;
     background-image: linear-gradient(100deg, var(--background),var(--accent) 25%, var(--accent),var(--background) 27%,var(--background),var(--accent) 30%, var(--accent), var(--background) 32%, var(--primary) 50%);
@@ -31,14 +31,14 @@ header {
     height: 8em;
 }
 
-
-h1 {
+/* this is the h1 in the header */
+#top {
     font-size: 200%;
     justify-content: flex-start;
 }
 
-/* for the nav bar links, for some reason can't get it to the right side of the viewport*/
-nav ul {
+/* want this on the right side of the viewport, but can't seem to get it to move over*/
+#nav-section { 
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -48,12 +48,12 @@ nav ul {
     list-style: none;
 }
 
-a {
+.header-links {
     text-decoration: none;
     color: var(--background);
 }
 
-li {
+.h-li {
     margin: .5em;
     min-width: 100%;
 }
@@ -62,7 +62,7 @@ li {
 /*this is the banner image underneath nav and header*/
 .hero {
     width: 100%;
-    height: 30em;
+    height: 25em;
     background-image: url(images/columbia-gorge-edit.jpg);
     background-size: cover;
     background-position: center;
@@ -94,13 +94,18 @@ main {
     padding: .5em;
     max-width: 66%;
 }
-/* probably need this section to be under main?? */
-section {
+
+.me {
+    list-style: square;
+}
+
+/* this is the work section */
+#work {
     display: flex;
     justify-content: center;
     padding: 2em;
 }
-section h1 {
+ {
     display: flex;
     color: var(--primary);
     padding: .5em;
@@ -124,4 +129,10 @@ section h1 {
     display: flex;
     color: var(--primary);
     
+}
+
+footer {
+    text-align: center;
+    padding: 2em;
+    color: var(--accent);
 }

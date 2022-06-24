@@ -17,16 +17,15 @@
     <!--here is the header, fixed so that it scrolls with the user-->
     <header>
 
-        <h1>Lewis Portfolio</h1>
-
-        <nav>
+        <h1 id="top">Lewis Portfolio</h1>
 
         
-            <ul>
+        <nav id="header-nav">        
+            <ul id="nav-section">
                 <!-- having my header fixed makes it so that when it jumps to the about me section, it's covered by the header -->
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="h-li"><a href="#about" class="header-links">About Me</a></li>
+                <li class="h-li"><a href="#work" class="header-links">Work</a></li>
+                <li class="h-li"><a href="#contact" class="header-links">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -36,47 +35,76 @@
 
     <!--this is the about me section-->
     <main>
+        <article>
+
         <h1 id="about">About Me</h1>
-        <article id="text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quasi, iste possimus culpa temporibus dolores facere officiis veniam maiores tempora minima eum assumenda laboriosam rem alias architecto, magnam blanditiis qui.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quia, ut, molestiae itaque aliquid vel sint accusantium fugiat natus quis cum assumenda rerum pariatur quaerat nam sit. Consequatur, facilis labore?</p>
+
+            <section id="text">
+                <p>My name is Lindsay Lewis (previously Lindsay Schwehr). Thank you so much for taking the time to view my portfolio!
+                <br><br>
+                 I am new to coding and development, so I will be continually updating this portfolio as I learn new languages and develop new projects. You will find those projects in this portfolio.
+                <br><br>
+            <!-- little structured list of things about me below -->
+                Some other things to note about me: 
+                    <ul>
+                        <li class="me">I'm a Portland, Oregon transplant!</li>
+                        <li class="me">I was raised in the Yakima Valley in Central Washington.</li>
+                        <li class="me">I have four cat children: Mavis, Finn, Fennel, and Lavender</li>
+                        <li class="me">In my free time, I love to teach myself new hobbies, like sewing, crochet, and cross stitch.</li>
+                        <li class="me">I met my husband in a game called, Overwatch. He was on the enemy team!</li>
+                    </ul>
+                </p>
+            </section>
         </article>
 
     <!--article will contain 5 boxes (their tag is aside) that showcase my work, with the top one taking 2x the width as the other 4, which stack-->
+        <article>
 
         <h1 id="work">Work</h1>
 
         <!--this first one is the largest and will need an ID-->
-        <article id="bigbox">
+            <section id="bigbox">
 
-            <a href="https://lindslewis.github.io/accessibility-refactor/" target="_blank">
+                <a href="https://lindslewis.github.io/accessibility-refactor/" target="_blank">
 
-                <img alt="An image of Mt. Rainier in the background, with a path and rolling green hills in the foreground." src="assets/images/mt-rainier-edit.jpg" width="756px" height="428.63px"/>
-            </a>
-        </article>
+                    <img alt="An image of Mt. Rainier in the background, with a path and rolling green hills in the foreground." src="assets/images/mt-rainier-edit.jpg" width="756px" height="428.63px"/>
+                </a>
+
+            </section>
 
         <!--these four will use the same class-->
-        <article class="examples"></article>
-        <article class="examples"></article>
-        <article class="examples"></article>
-        <article class="examples"></article>
+            <section class="examples"></section>
+            <section class="examples"></section>
+            <section class="examples"></section>
+            <section class="examples"></section>
 
-    </main>
+        </article>
 
-    <!--!!!!lets not have this be a footer.!!!!! footer will be the contact me section (which needs a h2,3,etc. tag) and then links to various methods of contact, i.e. phone number, email, github, instagram, spotify-->
-        <h1 id="contact">Contact Me</h1>
         <article>
 
-        <nav>
-            <ul>
-                <li><a href="#">E-Mail</a></li>
-                <li><a href="#">Github</a></li>
-                <li><a href="#">Spotify</a></li>
-            </ul>
-        </nav>
-        
+        <h1 id="contact">Contact Me</h1>
+
+            <section>
+
+            <nav>
+                <ul>
+                    <li><a href="#">E-Mail</a></li>
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Spotify</a></li>
+                </ul>
+            </nav>
+
+            <!-- not sure where good placement for this will be yet -->
+            <!-- <p><a href="#top">To Top</a></p> -->
+
+            </section>
         </article>
     </main>
+
+    <footer>
+        <h2>Made with Love</h2>
+    </footer>
 
 
 
