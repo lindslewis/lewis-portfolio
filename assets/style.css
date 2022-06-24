@@ -81,10 +81,11 @@ main {
     padding: 2em;
 }
 
-/* this is the about me section */
- #about {
+/* this is for the large about me, work, and contact me */
+ .section-headings {
     display: flex;
     align-items: right;
+    justify-content: left;
     float: left;
     color: var(--primary);
     padding: .5em;
@@ -94,9 +95,10 @@ main {
     border-color: var(--accent);
     border-width: 0 .15em 0 0;
 }
-
+/* this is the about me section */
 #text {
     display: flex;
+    flex: 1;
     float: right;
     align-content: left;
     color: var(--main-text);
@@ -104,64 +106,58 @@ main {
     max-width: 66%;
 }
 
-
-p {
-    display: block;
+#profiles {
+    text-decoration: none;
+    color: var(--primary);
 }
 
 /* this is the work section */
 #boxes {
     display: flex;
     flex-wrap: wrap;
+    flex: 2;
     justify-content: center;
     padding: 2em;
 }
-#work {
-    display: flex;
-    color: var(--primary);
-    padding: .5em;
-    max-width: 33.33%;
-    margin-right: 1em;
+
+.page-title {
+    position:absolute;
+    color: var(--background);
+    background-color: var(--accent);
+    font-weight: bold;
+    border: var(--accent);
     border-style: solid;
-    border-color: var(--accent);
-    border-width: 0 .15em 0 0;
+    border-width: .25em;
+    border-radius: 3px;  
 }
 
+.img {
+    border: var(--accent);
+    border-style: solid;
+    border-width: .25em;
+    border-radius: 3px;
+}
 #box-1 {
     display: flex;
-    /* flex-wrap: wrap; */
-    /* background-image: url(images/mt-rainier-edit.jpg);
-    background-size: cover;
-    background-position: center; */
+    flex: 2;
     padding: .5em;
     width: 66%;
 }
 
 .examples {
     display: flex;
+    flex: 1;
+    position:relative;
     padding: .5em;
     width: 33%;
+    align-items: stretch;
 }
 
-#contact {
-    display: flex;
-    color: var(--primary);
-    padding: .5em;
-    max-width: 33.33%;
-    margin-right: 1em;
-    border-style: solid;
-    border-color: var(--accent);
-    border-width: 0 .15em 0 0;
-}
-
-
+/* this is the contact me section */
 #contact-nav {
-    /* display: flex;
-    text-decoration: none;
-    color: var(--main-text);
-    font-style: bold; */
     display: flex;
     position: relative;
+    align-items: center;
     justify-content: space-between;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
@@ -172,18 +168,40 @@ p {
 .contact-items {
     display: inline;
     justify-content: space-between;
+    min-width: 100%;
+   
 }
 
 .contact-links {
     display: inline;
     justify-content: space-between;
     text-decoration: none;
-    /* list-style: none; */
-    
+    color: var(--main-text);
 }
 
+/* footer at bottom */
 footer {
     text-align: center;
     padding: 2em;
     color: var(--accent);
+}
+
+/* tablet sized screens */
+@media screen and (max-width: 992px) {
+    header, main{
+        flex-direction: column;
+        flex: 1;
+        order: 2;
+    }
+}
+
+/* smartphones*/
+@media screen and (max-width: 600px) {
+    header, main {
+        flex-direction: column;
+        flex: 1;
+    }
+    #nav-section {
+        flex-direction: column;
+    }
 }
