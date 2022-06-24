@@ -12,9 +12,9 @@ https://lindslewis.github.io/lewis-portfolio/
 3. [Lessons-Learned](#lessons-learned)
 4. [Credits](#credits)
 
-![webpage-capture1](lewis-portfolio\assets\images\webpage-cap1.jpg)
-![webpage-capture2](lewis-portfolio\assets\images\webpage-cap2.jpg)
-![webpage-capture3](lewis-portfolio\assets\images\webpage-cap3.jpg)
+![webpage-capture1](assets/images/webpage-cap1.jpg)
+![webpage-capture2](assets/images/webpage-cap2.jpg)
+![webpage-capture3](assets/images/webpage-cap3.jpg)
 
 
 ## Usage
